@@ -1,17 +1,17 @@
 // from data.js
 const tableData = data;
 
-//Extra recommendation 1: For showing the number of rows in the table 
+//Extra recommendation 1: For printing the number of sightings 
 function rowCount(){
   document.getElementById("total").innerHTML = table_size;
   document.getElementById("filter").innerHTML = filter_size;
 }
 
-// Variables initialization for the count of table rows 
+// Variables initialization for the count of table rows corresponding to number of sightings
 var table_size = d3.selectAll(tableData).size();
 var filter_size = table_size;
 
-
+//Cals the function rowCount to print no of sightings
 rowCount()
 
 // get table references
@@ -89,11 +89,11 @@ function updateFilters() {
     
   };
 
-
+  // Function used for recommendation 2
   function handleClick(){
-    // Set the filtered data to the tableData to remove any filters
-    let filteredData = tableData;
-    filter_size = d3.selectAll(filteredData).size();
+    // Reloads the page to remove any filters
+    location.reload();
+    // To update the no of sightings
     rowCount();
 
     
