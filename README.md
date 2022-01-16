@@ -8,8 +8,10 @@ Dana a data journalist  is asked to write about her hometown McMinnville, Oregon
 * Bootstrap 4, Javascript ES6, VSCode 1.63.2, CSS, HTML, Chrome Browser.
 
 ## Results
-* We have build a webpage on UFO sightings and deployed it on github pages https://sucharita1.github.io/.
+1. We have build a webpage on UFO sightings and deployed it on github pages https://sucharita1.github.io/.
 ![github_pages](?raw=true)
+
+2. The new code with additonal city, state, country, shape filters which adapts to change of input can be viewed at [index.html]() and [app.js]()
 
 * Please refer to the image below where you can see that a portion of the table containing the UFO listings is marked in green and the portion marked in red are the filter elements, each filter elements namely Date, City, State, Country, Shape has been marked in blue and placeholders showing sample values are shown in orange. Placeholder for date is '1/10/2010', placehoder for city is 'el cajon', plaeholder for state is 'ca', placeholder for country is 'us', placeholder for shape is 'light'.
 ![filter_components](?raw=true)
@@ -21,8 +23,50 @@ Dana a data journalist  is asked to write about her hometown McMinnville, Oregon
 ![all_filters](?raw=true)
 
 ## Summary
-* Drawback of the original website with only filters.
-The original website design did not include a clear filter button. So everytime 
+#### Some drawbacks of the original website with only filters.
+* The original website design did not include a clear filter button. So everytime a person enters some filter he has to reload the page himself/herself to clear the filters. This may not be something that a person remembers to do or some people may not know how to do. 
+![only_filters](?raw=true)
+
+* The original html code did not include class = "form-control" so the filters size did not adapt to the webpage size change
+![without_form_conrol](?raw=true)
+
+
+#### Recommendations
+1. Clear Filter button so that users can remove the filters and reser the page again to try out new filters.
+* To implement the Clear Filter Button in html:
+![clear_filter_html](?raw=true)
+
+* To implement the Clear Filter logic in app.js:
+![clear_filter_js](?raw=true)
+
+* The website before clicking the Clear filter button:
+![before_clear](?raw=true)
+
+* The website after clicking the Clear filter button:
+![after_clear](?raw=true)
+
+
+
+2. Number of sightings filtered against the total sightings
+* To implement the number of sightings in html:
+![no_of_sighting_html](?raw=true)
+
+* To implement the number of sightings in js:
+![no_of_sighting_js](?raw=true)
+
+* The website before number of sightings information:
+![only_filters](?raw=true)
+
+* The website after number of sightings information:
+![no_of_sighting](?raw=true)
+
+3. For the filters which are of the type input,  class = "form-control" is added to make the input boxes responsive to the change in the screen size.
+![input_class_form_control](?raw=true)
+
+
+
+
+
 
 
 

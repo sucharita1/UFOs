@@ -1,7 +1,7 @@
 // from data.js
 const tableData = data;
 
-//Extra recommendation 1: For printing the number of sightings 
+//Extra recommendation 2: For printing the number of sightings 
 function rowCount(){
   document.getElementById("total").innerHTML = table_size;
   document.getElementById("filter").innerHTML = filter_size;
@@ -81,7 +81,7 @@ function updateFilters() {
       
     
     });
-    //Extra Recommendation 1: Change the row count after filter
+    //Extra Recommendation 2: Change the no of sightings after filter
     filter_size = d3.selectAll(filteredData).size();
     rowCount();
     // 10. Finally, rebuild the table using the filtered data
@@ -89,23 +89,18 @@ function updateFilters() {
     
   };
 
-  // Function used for recommendation 2
+  // Function used for recommendation 1
   function handleClick(){
     // Reloads the page to remove any filters
     location.reload();
     // To update the no of sightings
     rowCount();
-
-    
-    // print the original table
-    buildTable(filteredData);
-
-  }
+   }
   
   // 2. Attach an event to listen for changes to each filter
    d3.selectAll("input").on("change", updateFilters);
 
-  //Extra recommendation 2: 
+  //Extra recommendation 1: 
   // Clear filter button
   d3.selectAll("#filter-btn").on("click", handleClick);
 
