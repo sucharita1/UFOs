@@ -60,7 +60,7 @@ Dana a data journalist  is asked to write about her hometown McMinnville, Oregon
 * The website after number of sightings information:
 ![no_of_sighting](https://github.com/sucharita1/UFOs/blob/17673b9e59ed3fc2ecd83b459d6ddc6aac63fb46/static/images/no_of_sightings.png?raw=true)
 
-3. For the filters which are of the type input,  class = "form-control" is added to make the input boxes responsive to the change in the screen size. Here, the screen size has changed but the filter inoyts have also changed their size which was not the case before.
+3. For the filters which are of the type input,  class = "form-control" is added to make the input boxes responsive to the change in the screen size. Here, the screen size has changed but the filter inputs have also changed their size which was not the case before as shown in drawbacks.
 ![input_class_form_control](https://github.com/sucharita1/UFOs/blob/17673b9e59ed3fc2ecd83b459d6ddc6aac63fb46/static/images/input_class_form_control.png?raw=true)
 
 
